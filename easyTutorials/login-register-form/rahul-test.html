@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .hero-box {
+            width: 350px;
+            height: 400px;
+            margin: 50px auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+        }
+        
+        .form-box {
+            width: 250px;
+            margin: auto;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .input-group {
+            position: absolute;
+            width: 250px;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+        
+        #loginForm {
+            left: 0px;
+        }
+        
+        #registerForm {
+            left: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-box">
+        <div class="form-box">
+            <div class="button-box">
+                <button type="button" class="btn" onclick="loginForm()">Log In</button>
+                <button type="button" class="btn" onclick="registerForm()">Register</button>
+            </div>
+            <div class="input-group" id="loginForm">
+                <h3>login form</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat natus voluptates doloremque ipsa neque a doloribus, laboriosam iste nesciunt delectus repellendus earum distinctio minima, accusantium nihil corrupti eveniet quae!</p>
+            </div>
+            <div class="input-group" id="registerForm">
+                <h3>Register form</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat natus voluptates doloremque ipsa neque a doloribus, laboriosam iste nesciunt delectus repellendus earum distinctio minima, accusantium nihil corrupti eveniet quae!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("loginForm");
+        var y = document.getElementById("registerForm");
+
+        function registerForm() {
+            x.style.left = "-250px";
+            y.style.left = "0px";
+        }
+
+        function loginForm() {
+            x.style.left = "0px";
+            y.style.left = "250px";
+        }
+    </script>
+</body>
+
+</html>
