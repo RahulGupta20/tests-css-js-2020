@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array test</title>
+    <title>Document</title>
 </head>
 <body>
-    <h2>Javascript Array</h2>
+    <h2>Javascript Return</h2>
     <p id="demo"></p>
 
     <script>
-        var cars = ["BMW", "Scorpio", "Bolero"];
-        var last = cars[cars.length - 1];
-        document.getElementById("demo").innerHTML = last;
+        function marksFunction(math, eng, sc) {
+            var marks = (math + eng + sc);
+            return marks;
+        }
+
+        function percentage(tt) {
+            var per = tt/300 * 100;
+            return per;
+        }
+        
+        var sum = marksFunction(80, 80, 80);
+        var totalPer = percentage(sum);
+        document.getElementById("demo").innerHTML = totalPer;
     </script>
 </body>
 </html>
