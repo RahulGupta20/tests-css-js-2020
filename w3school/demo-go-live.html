@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Object Method</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <h2>Javascript Object</h2>
-    <p>An Object method is a function defination, stored as a property value.</p>
     <p id="demo"></p>
 
+    <!-- 1. Function Declaration -->
+    <!-- function functionName() {
+        document.write("Wow you are");
+        document.write("<br>");
+        document.write("Greater");
+    }
+    functionName();
+    document.write("<br>")
+    functionName(); -->
+
     <script>
-        // Create an object
-        var person = {
-            firstName: "John",
-            lastName: "Doe",
-            id: 5585,
-            fullName: function() {
-                return this.firstName + " " + this.lastName;
-            }
-        };
-        // Display data from the object
-        document.getElementById("demo").innerHTML = person.fullName();
+        function newUser(firstName, lastName) {
+            document.getElementById("demo").innerHTML = (firstName + lastName + "<br>");
+        }
+        // newUser(20, 30);
+        newUser("Rahul", "Gupta");
+        newUser("sonu", "Gupta");
     </script>
 </body>
+
 </html>
