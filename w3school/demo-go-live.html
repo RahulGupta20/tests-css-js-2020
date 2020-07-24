@@ -6,23 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Javascript Return</h2>
-    <p id="demo"></p>
-
+    <div id="menuList">     </div>
     <script>
-        function marksFunction(math, eng, sc) {
-            var marks = (math + eng + sc);
-            return marks;
-        }
+        var menus = ["Home", "About us", "Contact"];
+        var mlen = menus.length - 1;
+        // document.write(mlen)
 
-        function percentage(tt) {
-            var per = tt/300 * 100;
-            return per;
+        if(menus == 3) {
+            document.write("its true")
         }
-        
-        var sum = marksFunction(80, 80, 80);
-        var totalPer = percentage(sum);
-        document.getElementById("demo").innerHTML = totalPer;
+        else {
+            document.write("not")
+        }
     </script>
 </body>
 </html>
