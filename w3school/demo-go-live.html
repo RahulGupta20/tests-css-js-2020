@@ -8,25 +8,22 @@
 </head>
 
 <body>
-    <p id="demo"></p>
-
-    <!-- 1. Function Declaration -->
-    <!-- function functionName() {
-        document.write("Wow you are");
-        document.write("<br>");
-        document.write("Greater");
-    }
-    functionName();
-    document.write("<br>")
-    functionName(); -->
-
+    <div id="menusList"></div>
     <script>
-        function newUser(firstName, lastName) {
-            document.getElementById("demo").innerHTML = (firstName + lastName + "<br>");
+        var menus = ["Home", "About Us", "Services", "Portfolio", "Team", "Contact Us"];
+        var text;
+        // for (var a = 0; a < menus.length; a++) {
+        //     document.write(menus[a]);
+        // }
+        text = "<ul>";
+
+        menus.forEach(loop);
+        text += "</ul>";
+        document.getElementById("menusList").innerHTML = text;
+
+        function loop(value) {
+            text += "<li>" + value + "</li>";
         }
-        // newUser(20, 30);
-        newUser("Rahul", "Gupta");
-        newUser("sonu", "Gupta");
     </script>
 </body>
 

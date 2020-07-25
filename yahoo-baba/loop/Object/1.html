@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var a = {
+            fname: "Rahul",
+            lname: "Gupta",
+            age: 25,
+            email: "dearrahulgupta4@gmail.com",
+            favMovies: ['KKKG', 'Sanam', 'Jannat'],
+            living: {
+                'city': 'Kathmandu',
+                'country': 'Nepal'
+            },
+            salary: function() {
+                return 50000;
+            },
+            fullName: function() {
+                return this.fname + " " + this.lname;
+            }
+        }
+        document.write(a.living.city);
+        console.log(a)
+    </script>
+</body>
+
+</html>
